@@ -1,0 +1,38 @@
+:root {
+    --C1: #ffc82d;
+    --C2: #01b6a5;
+    --C3: #ff4457;
+    --text: hsl(205.09deg 96.49% 11.18%);
+    --bg: white;
+    --shadow: rgba(0, 0, 0, 0.15);
+}
+@mixin Shadow {
+    box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+  
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+@mixin Flex {
+    display: flex; justify-content: center; align-items: center
+}
+*{
+    margin: 0; padding: 0;
+    color: var(--text);
+
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+a{
+    text-decoration: none; font-weight: bold;
+}
+@import './Home.scss';
+@import './Navbar.scss';
+@import './Services.scss';
+@import './Gallery.scss';
+@import './Location.scss';
+@import './Footer.scss'
